@@ -13,8 +13,8 @@ import asyncio
 
 from langchain_openai import ChatOpenAI
 
-from browser_use import Agent
-
+# from browser_use import Agent
+from browser_use.agent.service import Agent
 llm = ChatOpenAI(model='gpt-4o')
 agent = Agent(
 	task='Go to amazon.com, search for laptop, sort by best rating, and give me the price of the first result',
